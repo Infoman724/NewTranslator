@@ -1,4 +1,4 @@
-from MYmodule import *
+from Mymodule import *
 ruswords=[]
 engwords=[]
 ruswords=faile_reader("RUS_WORDS.txt",ruswords)
