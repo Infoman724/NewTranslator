@@ -1,5 +1,6 @@
 #import os
 #from gtts import gTTS
+from random import *
 ruswords=[]
 engwords=[]
 
@@ -60,4 +61,6 @@ def heli(text:str,keel:str):
     os.system("heli.mp3")
 
 
-
+def testing():  
+    print("Сейчас начнут появлятся слова на обоих языках постарайтесь перевести правильно все слова!")
+    test=print(random.index.ruswords)
