@@ -1,6 +1,6 @@
 #import os
 #from gtts import gTTS
-from random import *
+import random
 ruswords=[]
 engwords=[]
 
@@ -60,7 +60,38 @@ def heli(text:str,keel:str):
     obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
     os.system("heli.mp3")
 
+def Ask_Input(a):
+    """
+    """
+    a=str(input("=>=>=>"))
+    return a
 
-def testing():  
-    print("Сейчас начнут появлятся слова на обоих языках постарайтесь перевести правильно все слова!")
-    test=print(random.index.ruswords)
+def Random_Word(l:list):
+    """
+    """
+    Number = random.randrange(1,5)
+    Word=l[Number]
+    return Word
+
+
+def Test(l1:list,l2:list,a:str): 
+ """ 
+ """ 
+ l=[] 
+ q=0 
+ Point=0 
+ while q<=10: 
+     q+=1 
+     c=Random_Word(l1) 
+     while l1.count(c)==1: 
+         c=Random_Word(l1) 
+         l.append(c) 
+         print(Random_Word(l1)) 
+         Answer=Ask_Input(a) 
+         if l1.index(c)==l2.index(Answer): 
+             print("Right!") 
+             Point+=1 
+         else: 
+             print("Wrong!") 
+             P=(10/Point*100)
+             print("Your check is",P)

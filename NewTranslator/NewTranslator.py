@@ -53,8 +53,10 @@ while True:
                 correction(sõna,engwords)
                 #таже тема и здесь
                 print(engwords)
-            elif vast=="C":
-                testing()
+
+
+        elif vast=="C":
+            Test(ruswords,engwords,"computer")
         #elif vast=="R":
             #keel=input("На каком языке говорим? ") #ru et en
             #sõna=input("Слово---> ")
