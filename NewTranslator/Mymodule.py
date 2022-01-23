@@ -37,6 +37,7 @@ def faile_saver(f:str,l:list):
 
 
 def uus_sõna(f:str,rida:str)->list:
+    
     """Lisame uus sõna failisse ja listisse 
     :param str file:faili nimetus
     :param str x:lisatav sõna
@@ -46,7 +47,8 @@ def uus_sõna(f:str,rida:str)->list:
         fail.write(rida+"\n")
 
 
-def correction(sona:str,l:list):
+def correction(sona:str,l:list):#я хз че с этой функцией она настолько чувствительна что даже коментарий внутри неё не написать она выдаст 17 ошибок
+    
 	for i in range(len(l)):
 		if l[i]==sona:
 			uus_sona=sona.replace(sona,input("Новое слово--> "))
@@ -57,6 +59,8 @@ def correction(sona:str,l:list):
 
 
 def heli(text:str,keel:str):
+    """функция проговоаривает слово которое вводите
+    """
     obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
     os.system("heli.mp3")
 
@@ -68,14 +72,16 @@ def Ask_Input(a):
 
 def Random_Word(l:list):
     """
+    функция генерирует случайное слово из списка по индексу
     """
-    Number = random.randrange(1,5)
+    Number = random.randrange(0,4)
     Word=l[Number]
     return Word
 
 
 def Test(l1:list,l2:list,a:str): 
  """ 
+ функция тестирует знания пользователя
  """ 
  l=[] 
  q=0 
