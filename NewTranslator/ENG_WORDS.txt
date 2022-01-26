@@ -3,4 +3,8 @@ programmer
 toilet
 chair
 computer
-
+notebook
+list
+word
+you
+he
