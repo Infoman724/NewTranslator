@@ -35,7 +35,7 @@ def faile_saver(f:str,l:list):
     """
     fail=open(f,"w",encoding="utf-8-sig")
     for el in l:
-        fail.write(el+'\n')
+        fail.write(f"{el} \n")
     fail.close
 
 
@@ -83,7 +83,7 @@ def test(l1:list,l2:list):
     lists.extend(l2)
     random.shuffle(lists)
     for z in range(len(l1)):
-        otvet=input(f"Переведи данное слово - '{lists[i]}': ")
+        otvet=input(f"Переведи данное слово - '{lists[z]}': ")
         if otvet in l1 or otvet in l2:
             if lists[z] in l1:
                if l1.index(lists[z])==l2.index(otvet):

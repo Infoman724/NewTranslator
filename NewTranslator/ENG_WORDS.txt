@@ -1,6 +1,6 @@
 im
-programmer
 toilet
+programmer
 chair
 computer
 notebook
@@ -8,3 +8,5 @@ list
 word
 you
 he
+window
+car
